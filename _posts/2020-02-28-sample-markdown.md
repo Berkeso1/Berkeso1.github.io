@@ -1,10 +1,6 @@
 ---
 layout: post
-title: Sample blog post to learn markdown tips
-subtitle: There's lots to learn!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
-tags: [test]
+title: Digimon Lab
 comments: true
 mathjax: true
 
@@ -61,7 +57,7 @@ Now for the final steps. Because we are using a list, we can utilize the <code s
 
 After completing this proccess we should get an answer of <code style="color: red;">1210.8835341365461</code>, the average hp of all digimon.
 
-## Did Anything Go Wrong?
+### Did Anything Go Wrong?
 
 I mean nothing really went wrong on this question. It was a very straight forward mathematical operation, finding the average of something. However I learned a couple of useful methods which ultimately helped me out a lot. Utilizing a list can be very useful. Because I used a list for this problem I was able to utilize the <code style="color: red;">sum()</code> and <code style="color: red;">len()</code> functions a huge shortcut so that I dont have to use a for loop that cycles through each value and adds them to a variable. Big headache.
 
@@ -105,14 +101,14 @@ Next, we create a <code style="color: red;">count</code> variable and set it to 
 
      count = 0
 
-## Looping Through the Data
+### Looping Through the Data
 
     for row in data:
         attribute_row = row.get(attribute)
 
 Here’s where the magic happens. We run a <code style="color: red;">for</code> loop that goes through each row of the CSV file. Inside the loop, we use <code style="color: red;">row.get(attribute)</code> to grab the value from the column we’re interested in (like "Type" or "Stage"). The <code style="color: red;">attribute</code> is just a placeholder for whatever column name we pass into the function.
 
-## Filtering for Specific Attributes
+### Filtering for Specific Attributes
 
     if attribute_row == specific_attribute:
             count = count + 1
@@ -123,7 +119,7 @@ We repeat this process for every row in the CSV. So, each time the specific attr
 
 Finally we can return our <code style="color: red;">count</code> variable which holds the information we need to complete this question.
 
-## Did Anything Go Wrong?
+### Did Anything Go Wrong?
 
 At first some things went wrong. As I explained earlier, I misread the question and ended up not accounting for a specific attribute which is the point of this question. However after understanding my error and readjusting my pseudo code I was able to come up with a successful function that does exactly what I want.
 
@@ -141,7 +137,7 @@ Here’s the breakdown of the code:
 
 To start, I created two lists: one to store all the Digimon and their stats (<code style="color: red;">digimon_list</code>), and another to store only the valid Digimon teams that meet the memory and attack requirements (<code style="color: red;">valid_digimon</code>).
 
-## Reading and Storing the Digimon Data
+### Reading and Storing the Digimon Data
 
     with open("digimon.csv", "r") as f:
         data = csv.DictReader(f)
@@ -160,7 +156,7 @@ At first, I thought I might have to use nested <code style="color: red;">for</co
 
 This single line of code generates all possible combinations of 3 Digimon from my list. Huge relief!
 
-## Checking Each Team's Memory and Attack
+### Checking Each Team's Memory and Attack
 
         for valid_team in all_combinations:
         total_memory = sum(digimon['memory'] for digimon in valid_team)
@@ -186,8 +182,12 @@ If a team meets these conditions, I add it to the valid_digimon list as a dictio
 
 And finally we just return a single team from the <code style="color: red;">valid_team</code> list!
 
-## Did Anything Go Wrong?
+### Did Anything Go Wrong?
 
 The hardest part of this question was figuring out how to generate all the combinations of 3 Digimon without brute forcing it. My initial pseudo code was “loop through the list of Digimon and find every possible group of 3,” but I quickly realized that was going to be super annoying. However as I explained before, I found the <code style="color: red;">itertools.combinations() </code>function, which saved me a lot of time.
 
 Also, nested lists and dictionaries can be pretty tricky, since this is my first time using them. At first, I was confused about how to store each Digimon’s stats, but I figured out that storing them as dictionaries inside a list would let me easily access the memory and attack stats when needed. This ultimately made it easier to filter the teams later.
+
+# Conclusion
+
+During this lab I learned a lot about using lists and dictionaries to make my code more efficient. By using lists and dictionaries, I was able to utilize functions such as <code style="color: red;">sum()</code> or <code style="color: red;">len()</code> which make for a cleaner and better code rather than using a bunch of lines to complete a simple mathematical operation. Furthermore, this lab helped me learn how to manipulate a CSV without the use of pandas, which was really cool. I definitely think I can replace the combinations function from Itertools with my own function. It would make my code more original. Additionally, I believe there is definitely a more efficient way to look for valid digimon teams rather than finding all combinations then filtering. I could maybe... I think I have to think about this a little more, because I have an idea in my head, but I dont know how to put it in words. That would be my next step to improving this code. 
