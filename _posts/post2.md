@@ -73,7 +73,7 @@ In short, they need this data to teach AI how to outsmart the hackers and keep u
 
 Alright, let’s get into the specifics! The data they’re collecting is all about the fine details of network traffic, like the "digital footprints" left behind when data moves through a network. In this study, they’re recording things like **protocol types**, **source and destination bytes**, **error rates**, **urgent counts**, and **service flags** (you know, all the nerdy stuff that makes network traffic tick). For example, the paper mentions recording values like **Rerror Rate** and **Srv Count** — basically, they're trying to capture the whole picture of what's happening in the network at any given time​. Heres a specific piece of text from the paper:
 
-
+![text](/assets/img/picture3.png)
 
 But, let’s face it, not every bit of data gets recorded. Some real-world variability might not make the cut. For instance, things like new vulnerabilities that haven’t been documented yet or very rare attack patterns could be missing. These gaps are like trying to catch a rare animal in the wild — if no one’s seen it before, it’s hard to include it in the dataset! The study highlights how creating synthetic data with Large Language Models (LLMs) tries to fill some of these gaps, but even then, there’s always the chance that some specific, one-off events might slip through the cracks.
 
