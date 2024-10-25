@@ -77,7 +77,22 @@ Alright, let’s get into the specifics! The data they’re collecting is all ab
 
 But, let’s face it, not every bit of data gets recorded. Some real-world variability might not make the cut. For instance, things like new vulnerabilities that haven’t been documented yet or very rare attack patterns could be missing. These gaps are like trying to catch a rare animal in the wild — if no one’s seen it before, it’s hard to include it in the dataset! The study highlights how creating synthetic data with Large Language Models (LLMs) tries to fill some of these gaps, but even then, there’s always the chance that some specific, one-off events might slip through the cracks.
 
-In short: They’re recording a ton of useful stuff to teach AI how to detect threats, but no dataset can capture every possible scenario. There’s always something that might be left out, especially with how quickly new cyber threats evolve!
+In short, they’re recording a ton of useful stuff to teach a model how to detect threats, but no dataset can capture every possible scenario. There’s always something that might be left out, especially with how quickly new cyber threats evolve.
+
+## Conclusion
+
+Alright, so they didn’t just wave a magic wand and declare victory — they actually put in the work to show that their method works! First off, they ran a **10-fold cross-validation** (fancy talk for "we checked our results again and again") to make sure the AI models were performing well. They tested how well these models could sniff out network intrusions and even zero-day exploits — the bad guys that nobody sees coming!
+
+The real proof came in the form of confusion matrices. No, not because anyone was confused, but because these matrices show how often the AI got things right. And spoiler alert: the AI got it right most of the time. The models nailed identifying "normal" traffic, and they did a pretty solid job at flagging suspicious and highly suspicious behaviors too. Adding in synthetic data (created by the AI itself) boosted the accuracy even more, helping the models catch those sneaky cyber threats that might otherwise slip through the cracks.
+
+Here is what the confusion matrix looked like:
+
+
+
+
+
+
+
 
 
 
