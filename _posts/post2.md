@@ -28,6 +28,7 @@ Similar to what Ms. Feng did in her post, I will also be giving a score from 1-5
 
 ## What datasets does this study reference or use?
 
+[dataset](../assets/img/picture2.png)
 
 
 
