@@ -6,7 +6,7 @@ mathjax: true
 
 ---
 
-As a fellow member of the machine learning community, one thing that everyone wishes for but can't always have is labeled, high-quality training data. But like lots of it. Certain topics that you may want to apply machine learning to may not have sufficient data to train a model on which can pose an issue. Therefore I decided to explore a paper that addresses synthetic data creation using large language models to overcome this limitation.
+As a fellow member of the machine learning community, one thing that everyone wishes for but can't always have is labeled, high-quality training data. But like lots of it. Certain topics that you may want to apply machine learning to may not have sufficient data to train a model on which can pose an issue. Therefore I decided to explore a paper that addresses synthetic data creation using large language models to overcome this limitation. The paper can be found [here](https://www-jstor-org.horacemann.idm.oclc.org/stable/48784778?searchText=large+language+model).
 
 # Overcoming the Labeled Training Data Bottleneck: A Route to Specialized AI
 
@@ -28,7 +28,44 @@ Similar to what Ms. Feng did in her post, I will also be giving a score from 1-5
 
 ## What datasets does this study reference or use?
 
-[dataset](../assets/img/picture2.png)
+The study references several publicly available datasets (I have provided links), including:
+
+[KDD Cup 99 Dataset](http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html):
+Despite its age, this dataset remains a cornerstone in network intrusion detection, offering a broad spectrum of network connection features.
+
+[NSL-KDD Dataset](https://www.unb.ca/cic/datasets/nsl.html):
+An evolution of the KDD Cup 99 dataset, the NSL-KDD addresses previous limitations by eliminating redundant records, thereby enhancing the dataset's utility for training and testing intrusion detection models.
+
+[CICIDS2017 Dataset (Canadian Institute for Cybersecurity Intrusion Detection System 2017)](https://www.unb.ca/cic/datasets/ids-2017.html):
+Featuring both malicious and benign attacks, this dataset reflects contemporary attack scenarios with detailed network traffic features and, for some attack types, payload data.
+
+[UNSW-NB15 Dataset](https://www.unsw.adfa.edu.au/unsw-canberra-cyber/cybersecurity/ADFA-NB15-Datasets/):
+Provided by the Australian Cyber Security Centre, this dataset mixes real normal activities with synthetic attack behaviors, offering a diverse array of network traffic analysis features.
+
+[ISCX VPN-nonVPN Traffic Dataset (ISCXVPN2016)](https://www.unb.ca/cic/datasets/vpn.html):
+Containing labeled network traffic that differentiates between VPN and non-VPN traffic, this dataset is invaluable for studying encrypted traffic patterns and potentially high-entropy payloads.
+
+[CTU-13 Dataset](https://mcfp.felk.cvut.cz/publicDatasets/CTU-13-Dataset/):
+This dataset includes botnet traffic alongside normal and background traffic, facilitating the study of botnet behaviors which may share similarities with zero-day exploit traffic patterns, especially in command and control communications and lateral movements.
+
+[MAWI Working Group Traffic Archive](http://mawi.wide.ad.jp/mawi/):
+A compilation of real-world internet backbone traffic datasets from the Wide project, capturing a variety of internet activities over extended periods. While not cybersecurity-specific, it offers a rich baseline for normal traffic pattern analysis.
+
+[The CAIDA UCSD Datasets](https://www.caida.org/data/passive/):
+Provided by the Center for Applied Internet Data Analysis (CAIDA), these datasets consist of anonymized internet traces, aiding in the modeling of both normal and anomalous network behaviors.
+
+[ToN IoT Telemetry Dataset](https://research.unsw.edu.au/projects/toniot-dataset):
+A contemporary dataset focusing on Internet of Things (IoT) telemetry, including network traffic, logs, and attack data. It is particularly suited for exploring IoT-specific threats and anomalies.
+
+These datasets can be found on pages 116 and 117 at this [link](https://www.jstor.org/stable/10.2307/48784778)
+
+These datasets are publicly available and have been extensively used in the cybersecurity research community. The research uses these datasets as a base and supplements them with synthetically generated data​.
+
+## Why are they interested in this data?
+
+
+
+
 
 
 
