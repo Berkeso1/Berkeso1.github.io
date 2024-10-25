@@ -71,13 +71,6 @@ In short, they need this data to teach AI how to outsmart the hackers and keep u
 
 ## What data is being recorded? What data might be left out?
 
-Alright, let’s talk about the nitty-gritty. What kind of data are they actually collecting? Picture this: they’re basically recording the "digital fingerprints" of everything happening on a network. This includes stuff like **protocol types**, **source and destination bytes**, **error rates**, and all those juicy details about how data moves around. Think of it as capturing every little detail of network traffic, so the AI can learn what "normal" looks like and, more importantly, what "suspicious" looks like!
-
-But, of course, not everything makes it into the spotlight. Some data might slip through the cracks. For example, **real-world variability** could be missed — things like super-specific, **one-off attack patterns** that haven’t been recorded yet or new vulnerabilities that haven’t made it to the dataset. It’s like trying to teach someone to spot every kind of car, but only giving them pictures of sedans and SUVs — they might miss a sports car zooming by!
-
-So in short, they’re recording a LOT, but there's always the chance some sneaky stuff gets left out. After all, no dataset is perfect!
-
-
 Alright, let’s get into the specifics! The data they’re collecting is all about the fine details of network traffic, like the "digital footprints" left behind when data moves through a network. In this study, they’re recording things like **protocol types**, **source and destination bytes**, **error rates**, **urgent counts**, and **service flags** (you know, all the nerdy stuff that makes network traffic tick). For example, the paper mentions recording values like **Rerror Rate** and **Srv Count** — basically, they're trying to capture the whole picture of what's happening in the network at any given time​. Heres a specific piece of text from the paper:
 
 
